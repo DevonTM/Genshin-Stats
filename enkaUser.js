@@ -182,15 +182,15 @@ async function syncGenshinStats() {
             },
 
             {
-                type: 2,
-                name: "world",
-                value: player.worldLevel ?? 0
+                type: 1,
+                name: "sig",
+                value: signature
             },
 
             {
                 type: 1,
-                name: "adv_str",
-                value: "Adventure Rank"
+                name: "mini",
+                value: `${player.nickname} • AR ${player.level ?? "-"}`
             },
 
             {
@@ -201,8 +201,20 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
-                name: "ach_str",
-                value: "Achievements"
+                name: "adv_str",
+                value: "Adventure Rank"
+            },
+
+            {
+                type: 2,
+                name: "world",
+                value: player.worldLevel ?? 0
+            },
+
+            {
+                type: 1,
+                name: "world_str",
+                value: "World Level"
             },
 
             {
@@ -213,8 +225,8 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
-                name: "aby_str",
-                value: "Spiral Abyss"
+                name: "ach_str",
+                value: "Achievements"
             },
 
             {
@@ -225,8 +237,8 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
-                name: "img_str",
-                value: "Imaginarium Theater"
+                name: "aby_str",
+                value: "Spiral Abyss"
             },
 
             {
@@ -240,8 +252,8 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
-                name: "sty_str",
-                value: "Stygian Onslaught"
+                name: "img_str",
+                value: "Imaginarium Theater"
             },
 
             {
@@ -255,22 +267,20 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
-                name: "sig",
-                value: signature
-            },
-
-            {
-                type: 1,
-                name: "world_str",
-                value: "World Level"
-            },
-
-            {
-                type: 1,
-                name: "mini",
-                value: `${player.nickname} • AR ${player.level ?? "-"}`
+                name: "sty_str",
+                value: "Stygian Onslaught"
             }
         ];
+
+        // Character name label, e.g. "Beidou • Lv. 60"
+        // Bind a text element to "char" in your widget design to display it.
+        if (characterLabel) {
+            dynamic.push({
+                type: 1,
+                name: "char",
+                value: characterLabel
+            });
+        }
 
         // Only add the image field if we actually resolved one
         // (same pattern as the Last.fm widget's album_art)
@@ -281,16 +291,6 @@ async function syncGenshinStats() {
                 value: {
                     url: imageUrl
                 }
-            });
-        }
-
-        // Character name label, e.g. "Beidou • Lv. 60"
-        // Bind a text element to "char" in your widget design to display it.
-        if (characterLabel) {
-            dynamic.push({
-                type: 1,
-                name: "char",
-                value: characterLabel
             });
         }
 

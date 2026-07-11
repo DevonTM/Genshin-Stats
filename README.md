@@ -157,24 +157,24 @@ Bind these field names in your Discord widget design:
 | Field       | Type   | Example                        |
 |-------------|--------|--------------------------------|
 | `nickname`  | Text   | Me_Yashverma                   |
-| `uid`       | Text   | UID 884716845                  |
+| `uid`       | Text   | 884716845                      |
 | `region`    | Text   | Asia                           |
-| `world`     | Number | 9                              |
-| `adv_str`   | Text   | Adventure Rank                 |
-| `adv`       | Number | 60                             |
-| `ach_str`   | Text   | Achievements                   |
-| `ach`       | Text   | 1.427                          |
-| `aby_str`   | Text   | Spiral Abyss                   |
-| `aby`       | Text   | 12-3 (36★)                     |
-| `img_str`   | Text   | Imaginarium Theater            |
-| `img`       | Text   | Act 8 (10★)                    |
-| `sty_str`   | Text   | Stygian Onslaught              |
-| `sty`       | Text   | Diff 6 • 214s                  |
 | `sig`       | Text   | "May all the beauty be blessed."|
+| `mini`      | Text   | Me_Yashverma • AR 60           |
+| `adv`       | Number | 60                             |
+| `adv_str`   | Text   | Adventure Rank                 |
+| `world`     | Number | 9                              |
 | `world_str` | Text   | World Level                    |
-| `mini`      | Text   | Yash • AR 60                   |
-| `image`     | Image  | Rotating character portrait    |
+| `ach`       | Text   | 1.427                          |
+| `ach_str`   | Text   | Achievements                   |
+| `aby`       | Text   | 12-3 (36★)                     |
+| `aby_str`   | Text   | Spiral Abyss                   |
+| `img`       | Text   | Act 8 (10★)                    |
+| `img_str`   | Text   | Imaginarium Theater            |
+| `sty`       | Text   | Diff 6 • 214s                  |
+| `sty_str`   | Text   | Stygian Onslaught              |
 | `char`      | Text   | Beidou • Lv. 60                |
+| `image`     | Image  | Rotating character portrait    |
 
 ------------------------------------------------------------------------
 
@@ -240,11 +240,22 @@ PATCH https://discord.com/api/v9/applications/{APP_ID}/users/{USER_ID}/identitie
   "data": {
     "dynamic": [
       { "type": 1, "name": "nickname", "value": "Me_Yashverma" },
-      { "type": 1, "name": "uid", "value": "UID 884716845" },
+      { "type": 1, "name": "uid", "value": "884716845" },
       { "type": 1, "name": "region", "value": "Asia" },
-      { "type": 2, "name": "world", "value": 9 },
+      { "type": 1, "name": "sig", "value": "\"May all the beauty be blessed.\"" },
+      { "type": 1, "name": "mini", "value": "Me_Yashverma • AR 60" },
       { "type": 2, "name": "adv", "value": 60 },
+      { "type": 1, "name": "adv_str", "value": "Adventure Rank" },
+      { "type": 2, "name": "world", "value": 9 },
+      { "type": 1, "name": "world_str", "value": "World Level" },
       { "type": 1, "name": "ach", "value": "1.427" },
+      { "type": 1, "name": "ach_str", "value": "Achievements" },
+      { "type": 1, "name": "aby", "value": "12-3 (36★)" },
+      { "type": 1, "name": "aby_str", "value": "Spiral Abyss" },
+      { "type": 1, "name": "img", "value": "Act 8 (10★)" },
+      { "type": 1, "name": "img_str", "value": "Imaginarium Theater" },
+      { "type": 1, "name": "sty", "value": "Diff 6 • 214s" },
+      { "type": 1, "name": "sty_str", "value": "Stygian Onslaught" },
       { "type": 1, "name": "char", "value": "Beidou • Lv. 60" },
       {
         "type": 3,
