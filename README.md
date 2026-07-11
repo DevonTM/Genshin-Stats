@@ -158,11 +158,12 @@ Bind these field names in your Discord widget design:
 |-------------|--------|--------------------------------|
 | `nickname`  | Text   | Me_Yashverma                   |
 | `uid`       | Text   | UID 884716845                  |
-| `world`     | Text   | Asia • WL 9                    |
+| `region`    | Text   | Asia                           |
+| `world`     | Number | 9                              |
 | `adv_str`   | Text   | Adventure Rank                 |
 | `adv`       | Number | 60                             |
 | `ach_str`   | Text   | Achievements                   |
-| `ach`       | Text   | 1427                           |
+| `ach`       | Number | 1427                           |
 | `aby_str`   | Text   | Spiral Abyss                   |
 | `aby`       | Text   | 12-3 (36★)                     |
 | `img_str`   | Text   | Imaginarium Theater            |
@@ -240,9 +241,10 @@ PATCH https://discord.com/api/v9/applications/{APP_ID}/users/{USER_ID}/identitie
     "dynamic": [
       { "type": 1, "name": "nickname", "value": "Me_Yashverma" },
       { "type": 1, "name": "uid", "value": "UID 884716845" },
-      { "type": 1, "name": "world", "value": "Asia • WL 9" },
+      { "type": 1, "name": "region", "value": "Asia" },
+      { "type": 2, "name": "world", "value": 9 },
       { "type": 2, "name": "adv", "value": 60 },
-      { "type": 1, "name": "ach", "value": "1427" },
+      { "type": 2, "name": "ach", "value": 1427 },
       { "type": 1, "name": "char", "value": "Beidou • Lv. 60" },
       {
         "type": 3,

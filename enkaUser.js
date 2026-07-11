@@ -163,7 +163,11 @@ async function syncGenshinStats() {
         }
 
         const dynamic = [
-            { type: 1, name: "nickname", value: player.nickname },
+            {
+                type: 1,
+                name: "nickname",
+                value: player.nickname
+            },
 
             {
                 type: 1,
@@ -173,8 +177,14 @@ async function syncGenshinStats() {
 
             {
                 type: 1,
+                name: "region",
+                value: region
+            },
+
+            {
+                type: 2,
                 name: "world",
-                value: `${region} • WL ${player.worldLevel ?? "-"}`
+                value: player.worldLevel ?? 0
             },
 
             {
@@ -196,9 +206,9 @@ async function syncGenshinStats() {
             },
 
             {
-                type: 1,
+                type: 2,
                 name: "ach",
-                value: String(player.finishAchievementNum ?? "-")
+                value: player.finishAchievementNum ?? 0
             },
 
             {
