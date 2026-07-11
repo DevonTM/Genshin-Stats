@@ -258,7 +258,7 @@ async function syncGenshinStats() {
             {
                 type: 1,
                 name: "mini",
-                value: `${player.nickname}: AR ${player.level ?? "-"}`
+                value: `${player.nickname} • AR ${player.level ?? "-"}`
             }
         ];
 

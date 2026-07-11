@@ -171,7 +171,7 @@ Bind these field names in your Discord widget design:
 | `sty`       | Text   | Diff 6 • 214s                  |
 | `sig`       | Text   | "May all the beauty be blessed."|
 | `world_str` | Text   | World Level                    |
-| `mini`      | Text   | Yash: AR 60                    |
+| `mini`      | Text   | Yash • AR 60                   |
 | `image`     | Image  | Rotating character portrait    |
 | `char`      | Text   | Beidou • Lv. 60                |
 
