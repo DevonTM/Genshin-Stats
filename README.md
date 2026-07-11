@@ -41,7 +41,7 @@ automatically updates your Discord profile on a schedule.
 -   🌍 Region & World Level
 -   🏆 Achievements
 -   ⚔️ Spiral Abyss Progress
--   🎭 Imaginarium Theatre Progress
+-   🎭 Imaginarium Theater Progress
 -   💀 Stygian Onslaught Progress
 -   ✍️ Player Signature
 -   🖼️ **Rotating character showcase** — a different showcased
@@ -117,7 +117,7 @@ make sure **"Show Character Details"** is enabled.
 ### be advised that this requires knowing what you're doing, along with browser devtools knowledge!
 2.1 Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 > the warning only applies if you are manually creating your widget!
-- 2.1.a. use this [widget creation script](https://gist.github.com/aamiaa/7cdd590e3949cd654758bc90bcb4710b) by aamia (automatic). 
+- 2.1.a. use this [widget creation script](https://gist.github.com/aamiaa/7cdd590e3949cd654758bc90bcb4710b) by aamia (automatic).
 - 2.1.b. if you want to manually go thru the creation process, follow the steps in this [blog post](https://chloecinders.com/blog/discord-widgets) by chloecinders to create your discord application, social sdk profile and widget design.
 2.  Copy the **Application ID** (`DISCORD_CLIENT_ID`) and the
     **Bot Token** (`DISCORD_BOT_TOKEN`).
@@ -165,7 +165,7 @@ Bind these field names in your Discord widget design:
 | `ach`       | Text   | 1427                           |
 | `aby_str`   | Text   | Spiral Abyss                   |
 | `aby`       | Text   | 12-3 (36★)                     |
-| `img_str`   | Text   | Imaginarium Theatre            |
+| `img_str`   | Text   | Imaginarium Theater            |
 | `img`       | Text   | Act 8 (10★)                    |
 | `sty_str`   | Text   | Stygian Onslaught              |
 | `sty`       | Text   | Diff 6 • 214s                  |
