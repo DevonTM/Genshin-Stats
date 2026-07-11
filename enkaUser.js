@@ -206,9 +206,9 @@ async function syncGenshinStats() {
             },
 
             {
-                type: 2,
+                type: 1,
                 name: "ach",
-                value: player.finishAchievementNum ?? 0
+                value: String(player.finishAchievementNum ?? 0).replace(/\B(?=(\d{3})+(?!\d))/g, ".")
             },
 
             {

@@ -163,7 +163,7 @@ Bind these field names in your Discord widget design:
 | `adv_str`   | Text   | Adventure Rank                 |
 | `adv`       | Number | 60                             |
 | `ach_str`   | Text   | Achievements                   |
-| `ach`       | Number | 1427                           |
+| `ach`       | Text   | 1.427                          |
 | `aby_str`   | Text   | Spiral Abyss                   |
 | `aby`       | Text   | 12-3 (36★)                     |
 | `img_str`   | Text   | Imaginarium Theater            |
@@ -244,7 +244,7 @@ PATCH https://discord.com/api/v9/applications/{APP_ID}/users/{USER_ID}/identitie
       { "type": 1, "name": "region", "value": "Asia" },
       { "type": 2, "name": "world", "value": 9 },
       { "type": 2, "name": "adv", "value": 60 },
-      { "type": 2, "name": "ach", "value": 1427 },
+      { "type": 1, "name": "ach", "value": "1.427" },
       { "type": 1, "name": "char", "value": "Beidou • Lv. 60" },
       {
         "type": 3,
