@@ -11,9 +11,9 @@ const PFPS_MAP_URL = "https://raw.githubusercontent.com/EnkaNetwork/API-docs/mas
 const LOC_MAP_URL = "https://raw.githubusercontent.com/EnkaNetwork/API-docs/master/store/loc.json";
 const ENKA_UI_BASE = "https://enka.network/ui/";
 
-const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID; 
+const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID;
 const DISCORD_USER_ID = process.env.DISCORD_USER_ID;
-const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN; 
+const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 
 // How often the displayed character rotates (in hours).
 // Should match (or be a multiple of) the GitHub Actions cron schedule.
@@ -216,7 +216,7 @@ async function syncGenshinStats() {
             {
                 type: 1,
                 name: "img_str",
-                value: "Imaginarium Theatre"
+                value: "Imaginarium Theater"
             },
 
             {
@@ -225,7 +225,7 @@ async function syncGenshinStats() {
                 value:
                     theaterAct != null
                         ? `Act ${theaterAct}${theaterMode === 104 ? "-2" : ""} (${theaterStars ?? "-"}★)`
-                        : "Not Completed"
+                        : "Not Attempted"
             },
 
             {
